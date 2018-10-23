@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Creates larger edit dialog in JIRA
-// @author       You
+// @author       Daniel Jílek
 // @match        https://jira.unicorn.eu/browse/*
 // @grant        none
 // ==/UserScript==
