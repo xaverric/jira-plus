@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Hides the maintenance banner
-// @author       You
+// @author       Jiří Černík
 // @match        https://jira.unicorn.eu/*
 // @grant        none
 // ==/UserScript==
