@@ -1,7 +1,10 @@
 # Jira+
 Makes your JIRA world even better!
 
-## Scripts
+## All in one
+* [Jira ALL in one script](https://github.com/xaverric/jira-plus/blob/master/jira.js) 
+
+## Individual scripts
 * [Jira Larger Dialog](https://github.com/xaverric/jira-plus/blob/master/jiraLargerEditDialog.js) 
 * [Jira Maintenance Banner Hider](https://github.com/xaverric/jira-plus/blob/master/jiraMaintenanceBannerHider.js)
 * [Jira UI wider](https://github.com/xaverric/jira-plus/blob/master/jiraUIWider.js)
