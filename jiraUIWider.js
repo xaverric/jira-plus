@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Jira UI ++
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0.0
 // @description  Makes JIRA UI wider
 // @author       Jiří Černík
 // @match        https://jira.unicorn.eu/*

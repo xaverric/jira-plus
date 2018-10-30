@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Jira - Larger Edit Dialog
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.0.2
 // @description  Creates larger edit dialog in JIRA
 // @author       You
 // @match        https://jira.unicorn.eu/browse/*
