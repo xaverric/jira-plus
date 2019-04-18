@@ -11,14 +11,17 @@
 (function() {
     'use strict';
 
-    //clean element from event listeners
-    let oldElement = document.getElementsByClassName("ui-sortable")[0];
-    let newElement = oldElement.cloneNode(true);
-    oldElement.parentNode.replaceChild(newElement, oldElement);
+    setTimeout(function ()
+    {
+        //clean element from event listeners
+        let oldElement = document.getElementsByClassName("ui-sortable")[0];
+        let newElement = oldElement.cloneNode(true);
+        oldElement.parentNode.replaceChild(newElement, oldElement);
 
-    //change cursor style
-    let rows = document.getElementsByClassName("issue-table-draggable");
-    for (let i = 0; i < rows.length; i++) {
-        rows[i].style.cursor = "default";
-    }
+        //change cursor style
+        let rows = document.getElementsByClassName("issue-table-draggable");
+        for (let i = 0; i < rows.length; i++) {
+            rows[i].style.cursor = "default";
+        }
+    }, 800);
 })();
