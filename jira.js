@@ -78,17 +78,30 @@
     }, 800);
 
     /* ----------------- Drag disable on issue filter ----------------- */
-    setTimeout(function ()
-    {
-        //clean element from event listeners
-        let oldElement = document.getElementsByClassName("ui-sortable")[0];
-        let newElement = oldElement.cloneNode(true);
-        oldElement.parentNode.replaceChild(newElement, oldElement);
+    let dragDisableTimeout = 500;
 
+    let cursorChange = function () {
         //change cursor style
         let rows = document.getElementsByClassName("issue-table-draggable");
         for (let i = 0; i < rows.length; i++) {
             rows[i].style.cursor = "default";
         }
-    }, 800);
+    };
+
+    let dragDisable = function (timeout) {
+        setTimeout(function () {
+            // clean mousedown events from website
+            function handler(e) {
+                cursorChange();
+                e.stopPropagation();
+            }
+
+            document.addEventListener("mousedown", handler, true);
+
+            cursorChange();
+
+        }, timeout);
+    };
+
+    dragDisable(dragDisableTimeout);
 })();
