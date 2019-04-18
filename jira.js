@@ -76,4 +76,16 @@
     {var sidebar = document.getElementsByClassName("aui-sidebar");
         sidebar[0].remove();
     }, 800);
+
+    /* ----------------- Drag disable on issue filter ----------------- */
+    //clean element from event listeners
+    let oldElement = document.getElementsByClassName("ui-sortable")[0];
+    let newElement = oldElement.cloneNode(true);
+    oldElement.parentNode.replaceChild(newElement, oldElement);
+
+    //change cursor style
+    let rows = document.getElementsByClassName("issue-table-draggable");
+    for (let i = 0; i < rows.length; i++) {
+        rows[i].style.cursor = "default";
+    }
 })();
